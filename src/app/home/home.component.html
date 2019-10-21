@@ -1,3 +1,17 @@
-<p>
-  home works!
-</p>
+<h1 [class.gray]="h1Style">
+  home component works!
+</h1>
+<section [ngClass]="{'gray':h1Style, 'large':h1Style}">
+  <div>
+    <button (click)="clickMe()">Click Me</button> 
+  </div>
+</section>
+<section>
+  <div>Details used in this page:</div>
+  <ul>
+    <li>Event Triggering (click)="functionName(<param>)"</li>
+    <li>Conditional Single Class apply : [class.className]="condition(true/false)"</li>
+    <li>Multiple conditional classes apply: [ngClass]="json containing className as key and value as boolean condition"</li>
+    <li>Adding route in anchor tag use attribute => routerLink</li>
+  </ul>
+</section>
