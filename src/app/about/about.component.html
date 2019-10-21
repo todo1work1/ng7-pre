@@ -1,3 +1,14 @@
 <p>
   about works!
 </p>
+<div>
+  Users List:
+</div>
+<ul>
+  <li *ngFor="let user of users">
+      <img src="{{user.avatar}}"/>
+    <div>
+      <h3>{{user.first_name}} {{user.last_name}}</h3>
+    </div>
+  </li>
+</ul>
